@@ -1,0 +1,134 @@
+.formacao {
+  background-color: rgb(36, 35, 35);
+}
+.formacao .subtitulo {
+  color: black;
+  max-width: 5ch;
+}
+
+.formacao-texto {
+  color: aliceblue;
+  font-size: 1.5rem;
+  line-height: 1.33rem;
+  margin-bottom: 60px;
+  max-width: 50ch;
+  color: #525252;
+}
+.formacao-texto strong {
+  color: #ffffff;
+}
+.formacao-container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background-image: url(../img/detalhe.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+.faculdade {
+  flex: 1;
+  color: #ffffff;
+  background-color: black;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.faculdade-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+.faculdade-curso {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+  color: #ffffff;
+}
+.faculdade-curso::before {
+  content: " ";
+  display: block;
+  width: 4px;
+  height: 50px;
+  background-image: linear-gradient(#af22da, #690253);
+  position: absolute;
+  left: -24px;
+}
+.faculdade-instituicao {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+.cursos {
+  margin-bottom: 60px;
+}
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+.formacao-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/cursos.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+.idiomas h3::before {
+  background-image: url(../img/idiomas.svg);
+  background-repeat: no-repeat;
+}
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #a3a3a3;
+}
+.formacao-extra span {
+  color: #8f8f8f;
+}
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .formacao .subtitulo {
+    color: #ffffff;
+  }
+  .formação-texto {
+    font-size: 1.25rem;
+  }
+}
